@@ -7,7 +7,10 @@ import MyComponent from '../components/app';
 export default function Home() {
   return (
     <div>
+        <h1>くじ</h1>
             <MyComponent />
+        <p>結果</p>
+        <div id="result" ></div>
     </div>
 
     
