@@ -15,6 +15,11 @@ export default function Home() {
           href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
           rel="stylesheet"
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0628991062376576"
+          crossorigin="anonymous"
+        ></script>
       </Head>
       <div class="container mx-auto px-4">
         <h1 class="text-4xl font-bold mb-4 mt-8">くじ</h1>
