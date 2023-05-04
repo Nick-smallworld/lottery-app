@@ -1,6 +1,6 @@
 import React from "react";
 
-const MyComponent = () => {
+const LotteryOne = () => {
   const handleClick = function () {
     const arr = document.getElementById("textarea").value.split("\n");
     const filteredArr = arr.filter((item) => item != "");
@@ -33,7 +33,7 @@ const MyComponent = () => {
         ></textarea>
         <div class="mt-4">
           <button
-            type="submit"
+            type="button"
             id="submit"
             onClick={handleClick}
             class="bg-blue-500 text-white px-4 py-2 rounded mr-2"
@@ -54,4 +54,4 @@ const MyComponent = () => {
   );
 };
 
-export default MyComponent;
+export default LotteryOne;
