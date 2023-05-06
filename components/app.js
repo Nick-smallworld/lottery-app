@@ -2,17 +2,21 @@ import React from "react";
 
 const LotteryOne = () => {
   const handleClick = function () {
-    const arr = document.getElementById("textarea").value.split("\n");
-    const filteredArr = arr.filter((item) => item != "");
+    try {
+      const arr = document.getElementById("textarea").value.split("\n");
+      const filteredArr = arr.filter((item) => item != "");
 
-    // 生成した配列からランダムに結果を一つ選び、結果をdivに表示する
+      // 生成した配列からランダムに結果を一つ選び、結果をdivに表示する
 
-    const randomIndex = Math.floor(Math.random() * filteredArr.length);
-    const result =
-      filteredArr != false
-        ? filteredArr[randomIndex]
-        : "入力データがありません";
-    document.getElementById("result").innerHTML = result;
+      const randomIndex = Math.floor(Math.random() * filteredArr.length);
+      const result =
+        filteredArr != false
+          ? filteredArr[randomIndex]
+          : "入力データがありません";
+      document.getElementById("result").innerHTML = result;
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   const clear = function () {
