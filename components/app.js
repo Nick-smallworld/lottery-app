@@ -14,7 +14,7 @@ const LotteryOne = () => {
         filteredArr != false
           ? filteredArr[randomIndex]
           : "入力データがありません";
-      document.getElementById("result").innerHTML = result;
+      document.getElementById("result").innerHTML = result.trim();
     } catch (error) {
       console.error(error);
     }
