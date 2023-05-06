@@ -3,7 +3,8 @@ import React from "react";
 const LotteryOne = () => {
   const handleClick = function () {
     try {
-      const arr = document.getElementById("textarea").value.split("\n");
+      const formData = escapeHtml(document.getElementById("textarea").value);
+      const arr = formData.split("\n");
       const filteredArr = arr.filter((item) => item != "");
 
       // 生成した配列からランダムに結果を一つ選び、結果をdivに表示する
@@ -59,3 +60,12 @@ const LotteryOne = () => {
 };
 
 export default LotteryOne;
+
+function escapeHtml(unsafe) {
+  return unsafe
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
