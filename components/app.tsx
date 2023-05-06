@@ -3,14 +3,14 @@ import React from "react";
 const LotteryOne = () => {
   const handleClick = function () {
     try {
-      const formData = escapeHtml(document.getElementById("textarea").value);
-      const arr = formData.split("\n");
-      const filteredArr = arr.filter((item) => item != "");
+      const formData:string | null = escapeHtml(document.getElementById('textarea').value);
+      const arr:string[] | null = formData.split("\n");
+      const filteredArr:string[] = arr.filter((item) => item != "");
 
       // 生成した配列からランダムに結果を一つ選び、結果をdivに表示する
 
-      const randomIndex = Math.floor(Math.random() * filteredArr.length);
-      const result =
+      const randomIndex:number = Math.floor(Math.random() * filteredArr.length);
+      const result : string | null =
         filteredArr != false
           ? filteredArr[randomIndex]
           : "入力データがありません";
@@ -21,8 +21,8 @@ const LotteryOne = () => {
   };
 
   const clear = function () {
-    textarea.value = "";
-    document.getElementById("result").innerHTML = "";
+    document.getElementById('textarea').value = "";
+    document.getElementById('result').innerHTML = "";
   };
 
   return (
