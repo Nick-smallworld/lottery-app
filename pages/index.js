@@ -11,6 +11,14 @@ export default function Home() {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>くじ引きアプリ</title>
+        <meta content="くじ引きアプリです。選択に困ったとき、簡単な操作でくじを引き取捨選択を行うことができます。お気軽にご利用ください。" name="description"></meta>
+        <meta property="og:title" content="くじ引きアプリ" />
+        <meta property="og:description" content="くじ引きアプリです。選択に困ったとき、簡単な操作でくじを引き取捨選択を行うことができます。お気軽にご利用ください。" />
+        <meta property="og:type" content="くじ引きアプリ" />
+        <meta property="og:url" content="https://lottery-app-khaki.vercel.app/" />
+        <meta property="og:site_name" content="くじ引きアプリ" />
+        <meta property="og:locale" content="ja_JP"  />
+        <meta name="keywords" content="くじ,くじ引き,取捨選択,意思決定"></meta>
         <link
           href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
           rel="stylesheet"
