@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>くじ引きアプリ</title>
         <meta content="くじ引きアプリです。選択に困ったとき、簡単な操作でくじを引き取捨選択を行うことができます。お気軽にご利用ください。" name="description"></meta>
